@@ -11,8 +11,9 @@ I build protocols that make volatile resources production-ready. My work focuses
 Compute scarcity is a coordination problem. Stranded inventory (spot instances, consumer GPUs) offers 4-5x capacity expansion if orchestrated with provably optimal scheduling logic.
 
 **Stack:**
-*   **Languages:** Rust (primary), C++ (CUDA)
-*   **Systems:** Solana, AWS Spot, discrete-event simulation
-*   **Interests:** DePIN, Mechanism Design, Control Theory
+*   **Languages:** Rust (primary), C++/CUDA (accelerator kernels)
+*   **Specialization:** Rust FFI, systems orchestration, discrete-event simulation
+*   **Systems:** Solana, AWS Spot, DePIN infrastructure
+*   **Interests:** Mechanism Design, Control Theory, Distributed Runtime Optimization
 
-[bobby-math.dev](https://www.bobby-math.dev)
+[bobby-math.dev](https://bobby-math.dev)
