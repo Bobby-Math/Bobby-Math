@@ -15,4 +15,4 @@ Compute scarcity is a coordination problem. Stranded inventory (spot instances, 
 *   **Systems:** Solana, AWS Spot, discrete-event simulation
 *   **Interests:** DePIN, Mechanism Design, Control Theory
 
-[bobby-math.dev](https://bobby-math.dev)
+[bobby-math.dev](https://www.bobby-math.dev)
