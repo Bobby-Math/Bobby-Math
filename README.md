@@ -8,7 +8,7 @@ Rust systems engineer. I build distributed infrastructure and write about it.
 - [axon](https://github.com/bobby-math/axon) — Routing layer for multi-cloud LLM inference
 
 ### Writing
-I write technical content for engineering teams. Previously wrote for [Let's Get Rusty](https://www.youtube.com/@letsgetrusty) (600k subscribers).
+I write technical content for engineering teams. Previously wrote for [Let's Get Rusty](https://www.youtube.com/@letsgetrusty) (120k+ subscribers).
 
 → [Writing samples](https://bobby-math.dev/writing.html)
 
