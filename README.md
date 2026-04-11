@@ -30,8 +30,7 @@ and write about the difficult parts.
 
 - **Technical writing** — Previously contributed to 
   [Let's Get Rusty](https://www.youtube.com/@letsgetrusty) 
-  (120k+ subscribers). I write about async Rust internals, 
-  systems performance, and infrastructure design.
+  (120k+ subscribers).
   → [Writing samples](https://bobby-math.dev/blog)
   
 ### Prior Systems Work
