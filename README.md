@@ -33,7 +33,13 @@ and write about the difficult parts.
   (120k+ subscribers). I write about async Rust internals, 
   systems performance, and infrastructure design.
   → [Writing samples](https://bobby-math.dev/blog)
+  
+### Prior Systems Work
 
+- **[synkti-fleet](https://github.com/Bobby-Math/synkti-fleet-public)** — Spot instance orchestration 
+  prototype. EC2 tag-based worker discovery, interruption-aware 
+  draining, stateless failover. Worked end-to-end; not pursued 
+  for economic reasons.
 ---
 
 ### Interests
