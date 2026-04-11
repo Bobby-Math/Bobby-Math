@@ -12,7 +12,7 @@ and write about the difficult parts.
   verification in WASM, local LLM inference via WebGPU. 
   Ongoing research at [synkti.com](https://synkti.com).
 
-- **solana-realtime-indexer](https://github.com/Bobby-Math/solana-realtime-indexer)** *(in progress)* — High-performance 
+- **[solana-realtime-indexer](https://github.com/Bobby-Math/solana-realtime-indexer)** *(in progress)* — High-performance 
   Solana data pipeline: RPC connection pool + Geyser gRPC 
   consumer → TimescaleDB → public query API. 
   Targeting sub-200ms slot-to-indexed latency.
