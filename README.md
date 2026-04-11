@@ -1,6 +1,6 @@
 # Bobby Mathews
 
-Rust systems engineer. I build production infrastructure 
+Rust systems engineer. I build distributed systems infrastructure 
 and write about the difficult parts.
 
 ---
