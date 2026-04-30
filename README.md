@@ -15,7 +15,9 @@ and write about the difficult parts.
 - **[solana-realtime-indexer](https://github.com/Bobby-Math/solana-realtime-indexer)**  — High-performance 
   Solana data pipeline: RPC connection pool + Geyser gRPC 
   consumer → TimescaleDB → public query API. 
-  Targeting sub-200ms slot-to-indexed latency.
+  Measured 24ms slot-to-database write latency on devnet.
+  40+ TPS sustained.
+  Live dashboard: solana.bobby-math.dev
   
 - **[key-sign](https://github.com/Bobby-Math/key-sign)** — Secure Solana key 
   management and signing tool. AES-256-GCM encrypted private keys with 
