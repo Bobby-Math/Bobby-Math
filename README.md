@@ -3,6 +3,8 @@
 Rust systems engineer. I build distributed systems infrastructure 
 and write about the difficult parts.
 
+Correctness is not optional — formal verification, cryptographic guarantees, measured latency
+
 ---
 
 ### Current Work
