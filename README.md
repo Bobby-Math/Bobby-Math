@@ -16,6 +16,11 @@ and write about the difficult parts.
   Solana data pipeline: RPC connection pool + Geyser gRPC 
   consumer → TimescaleDB → public query API. 
   Targeting sub-200ms slot-to-indexed latency.
+  
+- **[key-sign](https://github.com/Bobby-Math/key-sign)** — Secure Solana key 
+  management and signing tool. AES-256-GCM encrypted private keys with 
+  Argon2 key derivation, phantom-type safety for key lifecycle, and 
+  zeroization. No password recovery by design.
 
 ---
 
