@@ -19,7 +19,7 @@ Correctness is not optional — formal verification, cryptographic guarantees, m
   consumer → TimescaleDB → public query API. 
   Measured 24ms slot-to-database write latency on devnet.
   40+ TPS sustained.
-  Live dashboard: solana.bobby-math.dev
+  Live dashboard: [solana.bobby-math.dev](https://solana.bobby-math.dev)
   
 - **[key-sign](https://github.com/Bobby-Math/key-sign)** — Secure Solana key 
   management and signing tool. AES-256-GCM encrypted private keys with 
