@@ -56,6 +56,7 @@ Systems performance benchmarking
 
 ---
 
-[bobby-math.dev](https://bobby-math.dev) · 
-[LinkedIn](https://www.linkedin.com/in/bobby-math/) · 
+[bobby-math.dev](https://bobby-math.dev)
 [bobby@bobby-math.dev](mailto:bobby@bobby-math.dev)
+[LinkedIn](https://www.linkedin.com/in/bobby-math/)
+[x/Twitter](https://github.com/Bobby-Math)
