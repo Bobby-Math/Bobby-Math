@@ -16,8 +16,7 @@ Correctness is not optional — formal verification, cryptographic guarantees, m
 
 - **[solana-realtime-indexer](https://github.com/Bobby-Math/solana-realtime-indexer)**  — High-performance 
   Solana data pipeline: RPC connection pool + Geyser gRPC 
-  consumer → TimescaleDB → public query API. 
-  Measured 24ms slot-to-database write latency on devnet.
+  consumer → TimescaleDB → public query API.
   40+ TPS sustained.
   Live dashboard: [solana.bobby-math.dev](https://solana.bobby-math.dev)
   
