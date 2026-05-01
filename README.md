@@ -18,6 +18,7 @@ Correctness is not optional — formal verification, cryptographic guarantees, m
   Solana data pipeline: RPC connection pool + Geyser gRPC 
   consumer → TimescaleDB → public query API.
   40+ TPS sustained.
+  Slot to db latency p50 - 1280.6 ms, p99 - 1859.0 ms
   Live dashboard: [solana.bobby-math.dev](https://solana.bobby-math.dev)
   
 - **[key-sign](https://github.com/Bobby-Math/key-sign)** — Secure Solana key 
