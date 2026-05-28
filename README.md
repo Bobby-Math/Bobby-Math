@@ -1,62 +1,73 @@
 # Bobby Mathews
 
-Rust systems engineer. I build distributed systems infrastructure 
-and write about the difficult parts.
+Rust/wgpu systems engineer. I build GPU-accelerated real-time visualization
+for high-frequency sensor data.
 
-Correctness is not optional — formal verification, cryptographic guarantees, measured latency
+Correctness is not optional: formal verification, cryptographic guarantees, measured latency.
+
+---
+
+### Focus
+
+Real-time rendering of high-frequency, multi-channel sensor streams in Rust and wgpu.
+Ring-buffer ingestion, GPU compute-shader signal processing, single-draw-call rendering
+at 60fps, native and in-browser via WASM/WebGPU. One architecture pattern across domains:
+research instrumentation, biosignals, robotics, industrial sensors.
+
+The bottleneck in real-time sensor visualization is architectural, not domain-specific.
+CPU renderers iterate samples serially and issue draw calls per channel, hitting a ceiling
+independent of domain. The GPU-correct path moves the per-sample work to compute and renders
+all channels in one pass, inside the frame budget.
+
 
 ---
 
 ### Current Work
 
-- **[synkti](https://synkti.com)** — Constrained document 
-  verification engine for patent prosecution. Formal grammar 
-  verification in WASM, local LLM inference via WebGPU. 
-  Ongoing research at [synkti.com](https://synkti.com).
-
-- **[solana-realtime-indexer](https://github.com/Bobby-Math/solana-realtime-indexer)**  — High-performance 
-  Solana data pipeline: RPC connection pool + Geyser gRPC 
-  consumer → TimescaleDB → public query API.
-  40+ TPS sustained.
-  Slot to db latency p50 - 1280.6 ms, p99 - 1859.0 ms
+- **[solana-realtime-indexer](https://github.com/Bobby-Math/solana-realtime-indexer)** :
+  Production real-time data pipeline. Lock-free hot path, Geyser gRPC consumer to
+  TimescaleDB, public query API, WAL crash recovery. 40+ TPS sustained, slot-to-db
+  latency p50 1281ms / p99 1859ms. The high-throughput streaming and latency-discipline
+  work the visualization ingestion layer builds on.
   Live dashboard: [solana.bobby-math.dev](https://solana.bobby-math.dev)
-  
-- **[key-sign](https://github.com/Bobby-Math/key-sign)** — Secure Solana key 
-  management and signing tool. AES-256-GCM encrypted private keys with 
-  Argon2 key derivation, phantom-type safety for key lifecycle, and 
-  zeroization. No password recovery by design.
+
+- **[key-sign](https://github.com/Bobby-Math/key-sign)** :
+  Secure key management and signing tool. AES-256-GCM encrypted keys with Argon2
+  derivation, phantom-type safety for key lifecycle, zeroization. No password recovery
+  by design.
+
+- **[synkti](https://synkti.com)** :
+  Constrained document verification engine. Formal grammar verification in WASM,
+  client-side LLM inference via WebGPU. Ongoing research at [synkti.com](https://synkti.com).
 
 ---
 
 ### Published Work
 
-- **[tokio-blocking-bench](https://bobby-math.github.io/tokio-blocking-bench)**
-  Link: https://bobby-math.github.io/tokio-blocking-bench/
-  — Controlled benchmark isolating Tokio executor starvation 
-  under blocking workloads. Key finding: 101x p99 latency 
-  increase under starvation. EC2-controlled environment, 
-  reproducible results.
+- **[tokio-blocking-bench](https://bobby-math.github.io/tokio-blocking-bench/)** :
+  Controlled benchmark isolating Tokio executor starvation under blocking workloads.
+  Key finding: 101x p99 latency increase under starvation. EC2-controlled, reproducible.
 
-- **Technical writing** 
-  → [Writing samples](https://bobby-math.dev/blog)
-  
+- **Technical writing** : [samples](https://bobby-math.dev/blog)
+
+---
+
 ### Prior Systems Work
 
-- **[synkti-fleet](https://github.com/Bobby-Math/synkti-fleet-public)** — Spot instance orchestration 
-  prototype. EC2 tag-based worker discovery, interruption-aware 
-  draining, stateless failover. Worked end-to-end; not pursued 
+- **[synkti-fleet](https://github.com/Bobby-Math/synkti-fleet-public)** :
+  Spot instance orchestration prototype. EC2 tag-based worker discovery,
+  interruption-aware draining, stateless failover. Worked end-to-end; not pursued
   for economic reasons.
+
 ---
 
 ### Interests
 
-Async Rust internals · Solana infrastructure · 
-Formal verification · High-throughput data pipelines · 
-Systems performance benchmarking
+Real-time GPU rendering (wgpu/WGSL) · GPU compute · Async Rust internals ·
+High-throughput data pipelines · Formal verification · Systems performance benchmarking
 
 ---
 
-[bobby-math.dev](https://bobby-math.dev)
-[bobby@bobby-math.dev](mailto:bobby@bobby-math.dev)
+[bobby-math.dev](https://bobby-math.dev) ·
+[bobby@bobby-math.dev](mailto:bobby@bobby-math.dev) ·
 [LinkedIn](https://www.linkedin.com/in/bobby-math/)
-[x/Twitter](https://github.com/Bobby-Math)
