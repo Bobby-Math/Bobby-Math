@@ -29,7 +29,6 @@ all channels in one pass, inside the frame budget.
   TimescaleDB, public query API, WAL crash recovery. 40+ TPS sustained, slot-to-db
   latency p50 1281ms / p99 1859ms. The high-throughput streaming and latency-discipline
   work the visualization ingestion layer builds on.
-  Live dashboard: [solana.bobby-math.dev](https://solana.bobby-math.dev)
 
 - **[key-sign](https://github.com/Bobby-Math/key-sign)** :
   Secure key management and signing tool. AES-256-GCM encrypted keys with Argon2
